@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evopathbench"
+version = "0.4.0"
+description = "Process-level evaluation of artifact-based self-evolving agents."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+inference = ["httpx>=0.24,<1"]
+
+[project.scripts]
+evopathbench = "evolens.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["evolens*"]
