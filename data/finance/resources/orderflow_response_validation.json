@@ -1,0 +1,75 @@
+{
+  "claim": "response-shape consistency with a reduced-form Binance target; not causal validation",
+  "fit_partition_only": true,
+  "inside_interval_rate": 1.0,
+  "root_mean_squared_curve_error": 3.655157629151901e-05,
+  "rows": [
+    {
+      "bootstrap_ci95": [
+        5.69240257467061e-06,
+        0.00012350232593228978
+      ],
+      "horizon_minutes": 5,
+      "horizon_steps": 0,
+      "observed_reduced_form_response": 6.053251535395872e-05,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    },
+    {
+      "bootstrap_ci95": [
+        -2.1762577937217234e-05,
+        0.00020167279223788057
+      ],
+      "horizon_minutes": 10,
+      "horizon_steps": 1,
+      "observed_reduced_form_response": 7.664295887747223e-05,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    },
+    {
+      "bootstrap_ci95": [
+        -6.984522433994977e-05,
+        0.00011237336237050001
+      ],
+      "horizon_minutes": 15,
+      "horizon_steps": 2,
+      "observed_reduced_form_response": 1.9567101206177998e-05,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    },
+    {
+      "bootstrap_ci95": [
+        -0.0001186101022862992,
+        3.652847484128017e-05
+      ],
+      "horizon_minutes": 20,
+      "horizon_steps": 3,
+      "observed_reduced_form_response": -3.641166850393243e-05,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    },
+    {
+      "bootstrap_ci95": [
+        -9.823765290248509e-05,
+        0.00010624315584320914
+      ],
+      "horizon_minutes": 35,
+      "horizon_steps": 6,
+      "observed_reduced_form_response": 9.785324089924426e-06,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    },
+    {
+      "bootstrap_ci95": [
+        -0.00010707603987844476,
+        0.00017783447185623166
+      ],
+      "horizon_minutes": 65,
+      "horizon_steps": 12,
+      "observed_reduced_form_response": 3.44653485890849e-05,
+      "simulator_controlled_response": 2.7430263268780972e-05,
+      "simulator_inside_empirical_ci": true
+    }
+  ],
+  "schema_version": "evolens-orderflow-response-validation-v1"
+}

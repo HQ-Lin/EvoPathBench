@@ -1,0 +1,86 @@
+{
+  "coverage_audit": {
+    "episode_count": 4800,
+    "episode_coverage": 1.0,
+    "event_episode_count": 1200,
+    "probe_episode_count": 3600,
+    "referenced_episode_count": 4800
+  },
+  "evolution_mechanisms": {
+    "capability_endurance": "Preserve previously acquired capabilities through later learning.",
+    "conflict_revision": "Detect counterevidence, invalidate stale rules, and install scoped replacements.",
+    "evidence_consolidation": "Accumulate evidence and gate persistent state updates.",
+    "experience_compression": "Distill a trajectory into a reusable strategy artifact.",
+    "memory_invocation": "Retrieve and apply the right artifact at decision time.",
+    "outcome_attribution": "Attribute feedback to the decision or assumption that should change.",
+    "risk_calibration": "Adapt while continuing to satisfy drawdown, turnover, and action constraints.",
+    "scope_qualification": "Infer when an artifact applies and resist surface-level shortcuts."
+  },
+  "families": [
+    "event_jump",
+    "liquidity",
+    "mean_reversion",
+    "opponent_reflexivity",
+    "risk_contract",
+    "trend"
+  ],
+  "generation_config": {
+    "checkpoint_schedule": [
+      "K0",
+      "K1",
+      "K2",
+      "K3",
+      "K4",
+      "K5"
+    ],
+    "evolution_updates_per_stream": 5,
+    "horizon": 24,
+    "instances_per_role": 50,
+    "paper_decisions_per_episode": 3,
+    "seed": 7,
+    "stream_seed": 17,
+    "stream_shards": 50,
+    "transform_version": "binance-calibrated-family-role-transform-v2"
+  },
+  "layers": [
+    "endogenous",
+    "exogenous"
+  ],
+  "roles": [
+    "learn_near",
+    "probe_near",
+    "probe_transfer",
+    "retention_anchor",
+    "update",
+    "probe_update",
+    "stress",
+    "shortcut_control"
+  ],
+  "scenario_count": 4800,
+  "schema_version": "evolens-market-binance-calibrated-v2",
+  "sha256": {
+    "episodes.jsonl": "1bdfe096daee3df4cdd3102f52f25e7eb635cf34a86fa32322577116957a34c9",
+    "resources/bootstrap_replicates_summary.jsonl": "ef775af74ce29ad90c2f86b8babe60d6ea93d334dbe4f7ab7fefb52d517b522b",
+    "resources/calibration_profile.json": "60a1aa106fda6d92fac1e4c1e3e250038398dc37b66994b6e1d347975c885e28",
+    "resources/locked_holdout_validation.json": "7245383a7bbb9729aabfbe9d6613e17e305767a22a80d8324244674aa195ebd8",
+    "resources/orderflow_local_projection.json": "98644119b052b81c7690e49429bf229fe4df64e5ff90ed931528a6c6defed865",
+    "resources/orderflow_response_validation.json": "f5897c0275b3079d33fefbf6c8865c76a20fef3fe5fcb4f996a04a2002df0272",
+    "resources/parameter_origin_ledger.json": "8bc08a942990a613a661ce8e8fda26a5b23c38bfdf955ec1a79c423c69c4138b",
+    "resources/regime_model.json": "4ab56e0bc4874d968342aeadca8897d524b63dcb07de72a51d327c54f83f5601",
+    "streams.jsonl": "4c3d504f969286fda626d638a5969aa2e104409c17ae2939b931b340bc6c6d07"
+  },
+  "stream_count": 1800,
+  "track": {
+    "bootstrap_replicates": "resources/bootstrap_replicates_summary.jsonl",
+    "calibration_id": "bcal-4acc4a84060e4bd92f88b35a",
+    "calibration_profile": "resources/calibration_profile.json",
+    "kind": "binance_calibrated_semi_synthetic",
+    "leaderboard_isolation": "must_not_pool_with_replay_or_uncalibrated_procedural_tracks",
+    "locked_holdout_validation": "resources/locked_holdout_validation.json",
+    "orderflow_local_projection": "resources/orderflow_local_projection.json",
+    "orderflow_response_validation": "resources/orderflow_response_validation.json",
+    "parameter_ledger": "resources/parameter_origin_ledger.json",
+    "path_type": "semi_synthetic_v2_rng_with_empirical_innovations",
+    "regime_model": "resources/regime_model.json"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "claim": "reduced-form cumulative response; not structural causal market impact",
+  "common_effect_control": "within-UTC-day demeaning",
+  "estimates": [
+    {
+      "bootstrap_ci95": [
+        5.69240257467061e-06,
+        0.00012350232593228978
+      ],
+      "coefficients": [
+        6.053251535395872e-05,
+        -0.036827690081768845,
+        0.0439356939236613,
+        -1.4356617356863365e-05,
+        3.7266259114234184e-05,
+        4.854489789164117e-05,
+        3.549673603491341e-05
+      ],
+      "cumulative_return_response": 6.053251535395872e-05,
+      "horizon_minutes": 5,
+      "horizon_steps": 0,
+      "observation_count": 1257103
+    },
+    {
+      "bootstrap_ci95": [
+        -2.1762577937217234e-05,
+        0.00020167279223788057
+      ],
+      "coefficients": [
+        7.664295887747223e-05,
+        -0.05090751152539321,
+        0.06066572312388382,
+        -9.066494830716154e-06,
+        4.6523397420954e-05,
+        5.932437822769733e-05,
+        4.289530354316009e-05
+      ],
+      "cumulative_return_response": 7.664295887747223e-05,
+      "horizon_minutes": 10,
+      "horizon_steps": 1,
+      "observation_count": 1257103
+    },
+    {
+      "bootstrap_ci95": [
+        -6.984522433994977e-05,
+        0.00011237336237050001
+      ],
+      "coefficients": [
+        1.9567101206177998e-05,
+        -0.04155179760992028,
+        0.09460791604134264,
+        -2.175888355543123e-05,
+        7.661939469001878e-05,
+        9.326086146112841e-05,
+        6.88869673398905e-05
+      ],
+      "cumulative_return_response": 1.9567101206177998e-05,
+      "horizon_minutes": 15,
+      "horizon_steps": 2,
+      "observation_count": 1257103
+    },
+    {
+      "bootstrap_ci95": [
+        -0.0001186101022862992,
+        3.652847484128017e-05
+      ],
+      "coefficients": [
+        -3.641166850393243e-05,
+        -0.042641043706686185,
+        0.12219714957161121,
+        -3.210896397778019e-05,
+        0.00010003823412958306,
+        0.0001183537534804808,
+        8.816227213631933e-05
+      ],
+      "cumulative_return_response": -3.641166850393243e-05,
+      "horizon_minutes": 20,
+      "horizon_steps": 3,
+      "observation_count": 1257103
+    },
+    {
+      "bootstrap_ci95": [
+        -9.823765290248509e-05,
+        0.00010624315584320914
+      ],
+      "coefficients": [
+        9.785324089924426e-06,
+        -0.08158752232568187,
+        0.20277501006179474,
+        -6.706337022389737e-05,
+        0.00016335769689432148,
+        0.00019291028944189544,
+        0.0001427051842891971
+      ],
+      "cumulative_return_response": 9.785324089924426e-06,
+      "horizon_minutes": 35,
+      "horizon_steps": 6,
+      "observation_count": 1257103
+    },
+    {
+      "bootstrap_ci95": [
+        -0.00010707603987844476,
+        0.00017783447185623166
+      ],
+      "coefficients": [
+        3.44653485890849e-05,
+        -0.10679945378498053,
+        0.27897493082158237,
+        -8.541347053790168e-05,
+        0.0002021287389145103,
+        0.00022524586475346917,
+        0.00016421455296569261
+      ],
+      "cumulative_return_response": 3.44653485890849e-05,
+      "horizon_minutes": 65,
+      "horizon_steps": 12,
+      "observation_count": 1257103
+    }
+  ],
+  "horizons": [
+    0,
+    1,
+    2,
+    3,
+    6,
+    12
+  ],
+  "regressors": [
+    "taker_imbalance",
+    "lag_return",
+    "absolute_lag_return",
+    "relative_log_quote_volume",
+    "asset_fixed_effect_1",
+    "asset_fixed_effect_2",
+    "asset_fixed_effect_3"
+  ],
+  "schema_version": "evolens-orderflow-local-projection-v1",
+  "simulator_indirect_mapping": {
+    "fit_squared_error": 8.016106376368407e-09,
+    "impact_decay": 0.0,
+    "mapping": "least-squares match of simulator geometric cumulative impulse curve",
+    "orderflow_impact": 2.7430263268780972e-05
+  }
+}
